@@ -17,3 +17,13 @@ def batch_badge_creator(names)
    return greeting
  end
    
+   def printer(finished)
+     batch_result = batch_badge_creator(finished)
+     batch_result.each do |x|
+       puts x 
+     end
+     result_room = assign_rooms(finished)
+     result_room.each do |x|
+       puts x 
+     end
+   end
